@@ -8,4 +8,3 @@
   - Demo
     - How do without server?
     - Make a video to show how it can be used?
-    - 
