@@ -1,6 +1,5 @@
 var counter = 1;
 var slide = d3.select("#slide");
-
 var onKeyUp = function onKeyUp(event){
     var keyCode = event.keyCode;
     if (keyCode== 39){
@@ -13,8 +12,7 @@ var onKeyUp = function onKeyUp(event){
 	    counter--;
 	}
     }
-    slide.attr("src","../static/websocketpics/slide"+Math.round(counter)+".png");//.delay(1000).duration(1000);
-    console.log(counter);
+    slide.attr("src","../static/websocketpics/slide"+counter+".png");
 };
 
 window.addEventListener("keyup",onKeyUp,false);
