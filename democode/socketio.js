@@ -20,7 +20,7 @@ $(document).ready(function(){
     var isDrawing = false;
     var drawer = false;
 
-    //Tells server to let all clients that are connected
+    //Tells server to tell all clients that are connected
     //a new client has connected
     ws.emit("clientMessage", {msg:""+name+" has connected.", nam:"Server"});
 
