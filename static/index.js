@@ -4,7 +4,7 @@ var slide = d3.select("#slide");
 var onKeyUp = function onKeyUp(event){
     var keyCode = event.keyCode;
     if (keyCode== 39){
-	if (counter < 10){
+	if (counter < 16){
 	    counter++;
 	}
     }
