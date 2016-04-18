@@ -47,7 +47,6 @@ $(document).ready(function(){
 
 
 //Drawing
-
     //When the client recieves data with 'drawing'
     //move the pen to the same position as the drawer's
     //If the drawer's mouse is down, lines will be drawn
@@ -67,7 +66,6 @@ $(document).ready(function(){
 	    lastY2 = yPos2;
 	}
     });
-    
 
     //Moves the pen. If mouse is down emit data about the
     //pen's position to the server.
@@ -99,13 +97,12 @@ $(document).ready(function(){
 	isDrawing=false;
 	drawer = false;
     };
-
+    
     //event listeners
     canvas.addEventListener("mousemove",draw);
     canvas.addEventListener("mousedown",drawing);
     canvas.addEventListener("mouseup",notDraw);
     canvas.addEventListener("mouseout",notDraw);
-
 
     //When the user closes the page, let the server know
     //to broadcast the client has disconnected  
